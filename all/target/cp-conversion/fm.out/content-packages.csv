@@ -1,4 +1,4 @@
-# File created on Tue Apr 21 13:28:46 CEST 2026 by the Apache Sling Content Package to Sling Feature converter
+# File created on Tue Apr 21 13:33:35 CEST 2026 by the Apache Sling Content Package to Sling Feature converter
 # content-package path, content-package ID, content-package type, content-package parent ID, path in parent content-package, absolute path
 /Users/aterinte01/AEM/codigo/formacion-aem/all/target/mysite.all-1.0.0-SNAPSHOT.zip,com.mysite:mysite.all:1.0.0-SNAPSHOT,CONTAINER,,,
 /Users/aterinte01/AEM/codigo/formacion-aem/all/target/mysite.all-1.0.0-SNAPSHOT.zip,com.mysite:mysite.ui.config:1.0.0-SNAPSHOT,CONTAINER,com.mysite:mysite.all:1.0.0-SNAPSHOT,/jcr_root/apps/mysite-packages/application/install/mysite.ui.config-1.0.0-SNAPSHOT.zip,/Users/aterinte01/AEM/codigo/formacion-aem/all/target/mysite.all-1.0.0-SNAPSHOT.zip!/jcr_root/apps/mysite-packages/application/install/mysite.ui.config-1.0.0-SNAPSHOT.zip

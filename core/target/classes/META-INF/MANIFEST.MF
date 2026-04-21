@@ -40,5 +40,6 @@ Service-Component: OSGI-INF/com.mysite.core.filters.LoggingFilter.xml,
  F/com.mysite.core.schedulers.SimpleScheduledTask.xml,OSGI-INF/com.mys
  ite.core.servlets.SimpleServlet.xml
 Sling-Model-Classes: com.mysite.core.models.Cards,com.mysite.core.mode
- ls.HelloWorldModel,com.mysite.core.models.Hero
+ ls.CardsManual,com.mysite.core.models.HelloWorldModel,com.mysite.core
+ .models.Hero
 

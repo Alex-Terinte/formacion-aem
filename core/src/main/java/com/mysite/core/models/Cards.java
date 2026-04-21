@@ -21,7 +21,7 @@ import static com.mysite.core.resources.ResourceConstants.*;
 
 @Model(
     adaptables   = Resource.class,
-    resourceType = ResourceTypes.CARDS,
+    resourceType = ResourceTypes.CARDS_CF,
     defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL
 )
 @Exporter(

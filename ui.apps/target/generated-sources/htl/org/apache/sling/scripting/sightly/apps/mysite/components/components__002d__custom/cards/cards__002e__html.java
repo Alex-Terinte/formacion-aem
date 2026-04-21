@@ -37,7 +37,7 @@ public final class cards__002e__html extends RenderUnit {
 Object _global_model = null;
 Object _global_templates = null;
 Collection var_collectionvar3_list_coerced$ = null;
-_global_model = renderContext.call("use", com.mysite.core.models.Cards.class.getName(), obj());
+_global_model = renderContext.call("use", com.mysite.core.models.CardsManual.class.getName(), obj());
 _global_templates = renderContext.call("use", "core/wcm/components/commons/v1/templates.html", obj());
 out.write("\n\n");
 {
