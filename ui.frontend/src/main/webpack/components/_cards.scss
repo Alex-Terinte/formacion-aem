@@ -1,0 +1,144 @@
+.album-cards {
+  background-color: $cards-section-bg;
+  padding: $section-padding-y 1.5rem;
+
+  // ----- Grid -----
+  &__grid {
+    max-width: $container-max-width;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: $spacer-lg;
+
+    @media (max-width: $bp-lg) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: $bp-sm) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  // ----- Card -----
+  &__card {
+    background-color: $card-bg;
+    border: 1px solid $card-border;
+    border-radius: $card-border-radius;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba($black, 0.35);
+    }
+  }
+
+  // ----- Thumbnail -----
+  &__thumbnail {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; // 16:9
+    background-color: $card-thumbnail-bg;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+
+  &__thumbnail-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  &__thumbnail-placeholder {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $card-thumbnail-bg;
+    color: $card-thumbnail-color;
+    font-size: 0.9375rem;
+  }
+
+  // ----- Body -----
+  &__body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: $spacer-md;
+    gap: 0.75rem;
+  }
+
+  &__description {
+    font-size: 0.875rem;
+    line-height: $line-height-body;
+    color: $card-color;
+    margin: 0;
+    flex: 1;
+
+    a {
+      color: inherit;
+      text-decoration: underline;
+    }
+  }
+
+  // ----- Footer -----
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: $spacer-sm;
+    margin-top: auto;
+  }
+
+  &__actions {
+    display: flex;
+    gap: 0;
+  }
+
+  &__action-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.625rem;
+    font-size: 0.8125rem;
+    color: $gray-500;
+    text-decoration: none;
+    border: 1px solid $btn-secondary-border;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+
+    &:first-child {
+      border-radius: 0.25rem 0 0 0.25rem;
+    }
+
+    &:last-child {
+      border-radius: 0 0.25rem 0.25rem 0;
+      border-left: none;
+    }
+
+    &:only-child {
+      border-radius: 0.25rem;
+      border-left: 1px solid $btn-secondary-border;
+    }
+
+    &:hover,
+    &:focus-visible {
+      background-color: $btn-secondary-bg-hover;
+      color: $white;
+      outline: none;
+    }
+  }
+
+  &__reading-time {
+    font-size: 0.8125rem;
+    color: $card-reading-time-color;
+    white-space: nowrap;
+    margin-left: auto;
+  }
+}

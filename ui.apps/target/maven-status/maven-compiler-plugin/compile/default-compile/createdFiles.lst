@@ -2,6 +2,8 @@ org/apache/sling/scripting/sightly/apps/mysite/components/helloworld/helloworld_
 org/apache/sling/scripting/sightly/apps/mysite/components/components__002d__custom/hero/hero__002e__html.class
 org/apache/sling/scripting/sightly/apps/mysite/components/xfpage/customheaderlibs__002e__html.class
 org/apache/sling/scripting/sightly/apps/mysite/components/xfpage/customfooterlibs__002e__html.class
+org/apache/sling/scripting/sightly/apps/mysite/components/components__002d__custom/cards/cards__002e__html.class
+org/apache/sling/scripting/sightly/apps/mysite/components/components__002d__custom/cards__002d__cf/cards__002d__cf__002e__html.class
 org/apache/sling/scripting/sightly/apps/mysite/components/page/customfooterlibs__002e__html.class
 org/apache/sling/scripting/sightly/apps/mysite/components/xfpage/content__002e__html.class
 org/apache/sling/scripting/sightly/apps/mysite/components/page/customheaderlibs__002e__html.class

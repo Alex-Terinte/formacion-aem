@@ -1,25 +1,3 @@
-// =============================================================================
-// Album Hero – album-hero.scss
-// Component: album-hero | AEM as a Cloud Service
-// =============================================================================
-
-// ----- Variables (overridable via design dialog / token map) -----
-$hero-bg:            #212529 !default;
-$hero-color:         #ffffff !default;
-$hero-desc-color:    rgba(#ffffff, 0.75) !default;
-
-$btn-primary-bg:     #0d6efd !default;
-$btn-primary-hover:  #0b5ed7 !default;
-$btn-primary-color:  #ffffff !default;
-
-$btn-secondary-bg:   rgba(#ffffff, 0.15) !default;
-$btn-secondary-hover:rgba(#ffffff, 0.25) !default;
-$btn-secondary-color:#ffffff !default;
-$btn-secondary-border: rgba(#ffffff, 0.4) !default;
-
-$hero-padding-y:     5rem !default;
-$hero-max-width:     640px !default;
-
 // ----- Component -----
 .album-hero {
   background-color: $hero-bg;
@@ -33,16 +11,16 @@ $hero-max-width:     640px !default;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.25rem;
+    gap: $spacer-lg;
   }
 
   // ----- Title -----
   &__title {
-    font-family: 'Georgia', 'Times New Roman', serif;
+    font-family: $font-family-serif;
     font-size: clamp(2rem, 5vw, 3rem);
-    font-weight: 300;
+    font-weight: $font-weight-light;
     letter-spacing: 0.01em;
-    line-height: 1.2;
+    line-height: $line-height-heading;
     margin: 0;
     color: $hero-color;
   }
@@ -50,7 +28,7 @@ $hero-max-width:     640px !default;
   // ----- Description -----
   &__description {
     font-size: 1rem;
-    line-height: 1.7;
+    line-height: $line-height-body;
     color: $hero-desc-color;
     margin: 0;
     max-width: 520px;
@@ -67,7 +45,7 @@ $hero-max-width:     640px !default;
     flex-wrap: wrap;
     gap: 0.75rem;
     justify-content: center;
-    margin-top: 0.5rem;
+    margin-top: $spacer-sm;
   }
 
   // ----- Buttons (shared) -----
@@ -75,14 +53,14 @@ $hero-max-width:     640px !default;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 0.5rem 1.25rem;
-    border-radius: 0.375rem;
-    font-size: 0.9375rem;
-    font-weight: 500;
-    line-height: 1.5;
+    padding: $btn-padding-y $btn-padding-x;
+    border-radius: $btn-border-radius;
+    font-size: $btn-font-size;
+    font-weight: $font-weight-medium;
+    line-height: $line-height-base;
     text-decoration: none;
     cursor: pointer;
-    transition: background-color 0.2s ease, border-color 0.2s ease;
+    transition: $btn-transition;
 
     // Primary
     &--primary {
@@ -92,13 +70,13 @@ $hero-max-width:     640px !default;
 
       &:hover,
       &:focus-visible {
-        background-color: $btn-primary-hover;
-        border-color: $btn-primary-hover;
+        background-color: $btn-primary-bg-hover;
+        border-color: $btn-primary-bg-hover;
         outline: none;
       }
 
       &:focus-visible {
-        box-shadow: 0 0 0 3px rgba($btn-primary-bg, 0.4);
+        box-shadow: 0 0 0 3px $btn-primary-shadow;
       }
     }
 
@@ -110,19 +88,19 @@ $hero-max-width:     640px !default;
 
       &:hover,
       &:focus-visible {
-        background-color: $btn-secondary-hover;
+        background-color: $btn-secondary-bg-hover;
         outline: none;
       }
 
       &:focus-visible {
-        box-shadow: 0 0 0 3px rgba(#ffffff, 0.2);
+        box-shadow: 0 0 0 3px $btn-secondary-shadow;
       }
     }
   }
 
   // ----- Responsive -----
-  @media (max-width: 576px) {
-    padding: 3rem 1rem;
+  @media (max-width: $bp-sm) {
+    padding: $spacer-xl 1rem;
 
     &__actions {
       flex-direction: column;

@@ -4,7 +4,7 @@
 <comment>My Site - Repository Structure Package</comment>
 <entry key="cloudManagerTarget">none</entry>
 <entry key="allowIndexDefinitions">false</entry>
-<entry key="created">2026-04-21T09:34:41.799Z</entry>
+<entry key="created">2026-04-21T11:28:45.509Z</entry>
 <entry key="groupId">com.mysite</entry>
 <entry key="name">mysite.ui.apps.structure</entry>
 <entry key="description">Empty package that defines the structure of the Adobe Experience Manager repository the Code packages in this project deploy into.

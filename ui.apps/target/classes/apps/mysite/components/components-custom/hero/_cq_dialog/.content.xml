@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Album Hero – Dialog de autor
+    Ruta: /apps/myproject/components/content/album-hero/_cq_dialog/.content.xml
+-->
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Album Hero"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+
+        <items jcr:primaryType="nt:unstructured">
+
+            <!-- ═══ Tab: Contenido ═══ -->
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+
+                <items jcr:primaryType="nt:unstructured">
+
+                    <!-- Tab 1: Texto -->
+                    <text
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Texto"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+
+                        <items jcr:primaryType="nt:unstructured">
+
+                            <title
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Título"
+                                name="./title"
+                                required="{Boolean}true"
+                                emptyText="Introduce el título del hero"/>
+
+                            <description
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                fieldLabel="Descripción"
+                                name="./description"
+                                rows="4"
+                                emptyText="Introduce la descripción del hero"/>
+
+                        </items>
+                    </text>
+
+                    <!-- Tab 2: CTAs -->
+                    <ctas
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Llamadas a la acción"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+
+                        <items jcr:primaryType="nt:unstructured">
+
+                            <!-- CTA Principal -->
+                            <primarySection
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/fieldset"
+                                jcr:title="CTA Principal">
+
+                                <items jcr:primaryType="nt:unstructured">
+
+                                    <primaryCtaLabel
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="Etiqueta del botón principal"
+                                        name="./primaryCtaLabel"
+                                        emptyText="Ej: Main call to action"/>
+
+                                    <primaryCtaLink
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                        fieldLabel="Enlace del botón principal"
+                                        name="./primaryCtaLink"
+                                        rootPath="/content"/>
+
+                                </items>
+                            </primarySection>
+
+                            <!-- CTA Secundaria -->
+                            <secondarySection
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/fieldset"
+                                jcr:title="CTA Secundaria">
+
+                                <items jcr:primaryType="nt:unstructured">
+
+                                    <secondaryCtaLabel
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="Etiqueta del botón secundario"
+                                        name="./secondaryCtaLabel"
+                                        emptyText="Ej: Secondary action"/>
+
+                                    <secondaryCtaLink
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                        fieldLabel="Enlace del botón secundario"
+                                        name="./secondaryCtaLink"
+                                        rootPath="/content"/>
+
+                                </items>
+                            </secondarySection>
+
+                        </items>
+                    </ctas>
+
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

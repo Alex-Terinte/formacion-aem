@@ -1,6 +1,6 @@
-/Users/aterinte01/AEM/codigo/formacion/core/src/test/java/com/mysite/core/schedulers/SimpleScheduledTaskTest.java
-/Users/aterinte01/AEM/codigo/formacion/core/src/test/java/com/mysite/core/filters/LoggingFilterTest.java
-/Users/aterinte01/AEM/codigo/formacion/core/src/test/java/com/mysite/core/servlets/SimpleServletTest.java
-/Users/aterinte01/AEM/codigo/formacion/core/src/test/java/com/mysite/core/testcontext/AppAemContext.java
-/Users/aterinte01/AEM/codigo/formacion/core/src/test/java/com/mysite/core/listeners/SimpleResourceListenerTest.java
-/Users/aterinte01/AEM/codigo/formacion/core/src/test/java/com/mysite/core/models/HelloWorldModelTest.java
+/Users/aterinte01/AEM/codigo/formacion-aem/core/src/test/java/com/mysite/core/listeners/SimpleResourceListenerTest.java
+/Users/aterinte01/AEM/codigo/formacion-aem/core/src/test/java/com/mysite/core/schedulers/SimpleScheduledTaskTest.java
+/Users/aterinte01/AEM/codigo/formacion-aem/core/src/test/java/com/mysite/core/servlets/SimpleServletTest.java
+/Users/aterinte01/AEM/codigo/formacion-aem/core/src/test/java/com/mysite/core/models/HelloWorldModelTest.java
+/Users/aterinte01/AEM/codigo/formacion-aem/core/src/test/java/com/mysite/core/filters/LoggingFilterTest.java
+/Users/aterinte01/AEM/codigo/formacion-aem/core/src/test/java/com/mysite/core/testcontext/AppAemContext.java
