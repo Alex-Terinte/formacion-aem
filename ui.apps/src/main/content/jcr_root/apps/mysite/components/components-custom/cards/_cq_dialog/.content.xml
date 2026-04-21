@@ -17,8 +17,7 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
                 fieldLabel="Tarjetas"
-                composite="{Boolean}true"
-                name="./cards">
+                composite="{Boolean}true">
 
                 <field
                     jcr:primaryType="nt:unstructured"

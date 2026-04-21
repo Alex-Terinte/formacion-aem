@@ -3,7 +3,7 @@
 
 <sly data-sly-call="${templates.placeholder @ isEmpty=model.empty}" />
 
-<section class="album-cards" data-sly-test="${!model.empty}">
+<section class="album-cards">
     <div class="album-cards__grid" data-sly-list.card="${model.cards}"> 
         <article class="album-cards__card">
             <div class="album-cards__thumbnail">
